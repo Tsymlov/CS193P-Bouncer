@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         let motionManager = AppDelegate.Motion.Manager
         if motionManager.accelerometerAvailable {
             motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()){ data, error in
-                self.bouncer.gravity.gravityDirection = CGVector(dx: data.acceleration.x, dy: -data.acceleration.y)
+                self.bouncer.gravity.gravityDirection = CGVector(dx: data!.acceleration.x, dy: -data!.acceleration.y)
             }
         }
     }
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     func addBlock() -> UIView{
-        let block = UIView(frame: CGRect(origin: CGPoint.zeroPoint, size: Constants.BlockSize))
+        let block = UIView(frame: CGRect(origin: CGPoint.zero, size: Constants.BlockSize))
         block.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
         view.addSubview(block)
         return block

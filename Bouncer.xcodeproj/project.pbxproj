@@ -14,6 +14,7 @@
 		3D1E19341BA8AC1C005ED90E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1E19321BA8AC1C005ED90E /* LaunchScreen.xib */; };
 		3D1E19401BA8AC1C005ED90E /* BouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E193F1BA8AC1C005ED90E /* BouncerTests.swift */; };
 		3D1E194A1BA8AC79005ED90E /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E19491BA8AC79005ED90E /* BouncerBehavior.swift */; };
+		3D6A4ADA1BEB70BD00F89726 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A4AD91BEB70BD00F89726 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,8 @@
 		3D1E19391BA8AC1C005ED90E /* BouncerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1E193E1BA8AC1C005ED90E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1E193F1BA8AC1C005ED90E /* BouncerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncerTests.swift; sourceTree = "<group>"; };
-		3D1E19491BA8AC79005ED90E /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = "<group>"; };
+		3D1E19491BA8AC79005ED90E /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = SOURCE_ROOT; };
+		3D6A4AD91BEB70BD00F89726 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 		3D1E191B1BA8AC1C005ED90E = {
 			isa = PBXGroup;
 			children = (
-				3D1E19491BA8AC79005ED90E /* BouncerBehavior.swift */,
 				3D1E19261BA8AC1C005ED90E /* Bouncer */,
 				3D1E193C1BA8AC1C005ED90E /* BouncerTests */,
 				3D1E19251BA8AC1C005ED90E /* Products */,
@@ -81,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				3D1E19291BA8AC1C005ED90E /* AppDelegate.swift */,
+				3D1E19491BA8AC79005ED90E /* BouncerBehavior.swift */,
 				3D1E192B1BA8AC1C005ED90E /* ViewController.swift */,
 				3D1E192D1BA8AC1C005ED90E /* Main.storyboard */,
+				3D6A4AD91BEB70BD00F89726 /* Settings.bundle */,
 				3D1E19301BA8AC1C005ED90E /* Images.xcassets */,
 				3D1E19321BA8AC1C005ED90E /* LaunchScreen.xib */,
 				3D1E19271BA8AC1C005ED90E /* Supporting Files */,
@@ -159,6 +162,8 @@
 		3D1E191C1BA8AC1C005ED90E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Alexey Tsymlov";
 				TargetAttributes = {
@@ -195,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6A4ADA1BEB70BD00F89726 /* Settings.bundle in Resources */,
 				3D1E192F1BA8AC1C005ED90E /* Main.storyboard in Resources */,
 				3D1E19341BA8AC1C005ED90E /* LaunchScreen.xib in Resources */,
 				3D1E19311BA8AC1C005ED90E /* Images.xcassets in Resources */,
@@ -415,6 +421,7 @@
 				3D1E19451BA8AC1C005ED90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D1E19461BA8AC1C005ED90E /* Build configuration list for PBXNativeTarget "BouncerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +430,7 @@
 				3D1E19481BA8AC1C005ED90E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
